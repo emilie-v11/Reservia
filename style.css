@@ -1,3 +1,72 @@
+/* Font Raleway for all body */
 body{
-    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    max-width: auto;
+}
+
+body a, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    border: #999999 2px solid;
+}
+
+#logo{
+    box-sizing: border-box;
+    width: 35%;
+    padding-top: 0;
+}
+
+nav 
+{
+    flex: 1;
+    display: flex;
+    width: auto;
+}
+
+.log-in{
+    width: 33%;
+    border: #999999 2px solid;
+    text-align: end;
+}
+
+.presentation{
+    font-weight: bold;
+
+}
+
+section article{
+    display: flex;
+
+}
+
+img{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #999999 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.filter-title{
+    font-size: em;
+}
+
+.popular-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Footer */
+footer{
+    
+}
+
+footer a, li{
 }

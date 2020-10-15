@@ -7,14 +7,16 @@
     <meta name="description" content="Reservia, Planifiez et réservez vos vacances. Vous trouverez sur notre site des hébergements 
 et des activités dans la ville de votre choix.">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aef01197d1.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
     <!--Website Header-->
-    <header>
-        <img src="images/logo/Reservia.svg" alt="logo Reservia">
+    <header class="">
+        <img id="logo" src="images/logo/Reservia.svg" alt="logo Reservia">
+        <!--Register link-->
+            <p class="log-in"><a href="#">S'inscrire</a></p>
         <!--Main Navigation Links-->
         <nav>
             <ul>
@@ -22,16 +24,15 @@ et des activités dans la ville de votre choix.">
                 <li><a href="#activities">Activités</a></li>
             </ul>
         </nav>
-        <!--Register link-->
-        <p><a href="#">S'inscrire</a></p>
-        <!--Section 0 Presentation-->
-        <section class="presentation">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-        </section>
     </header>
 
-    <!--Section 1 search, filters-->
+    <!--Section Presentation-->
+    <section class="presentation">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+    </section>
+
+    <!--Section search, filters-->
     <section>
         <!--Search by city-->
         <p><i class="fas fa-map-marker-alt"></i>
@@ -42,7 +43,7 @@ et des activités dans la ville de votre choix.">
         </button></p>
 
         <!--Search filters-->
-        <h2>Filtres</h2>
+        <h2 class="filter-title">Filtres</h2>
         <button><span class="icon">
             <i class="fas fa-money-bill-wave fa-fw"></i>
             </span>Économique</button>
@@ -64,7 +65,7 @@ et des activités dans la ville de votre choix.">
 
         <!--Section 2 Most popular lodging-->
         <section class="popular_gallery">
-            <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>
+            <h1 class="popular-title">Les plus populaires<i class="fas fa-chart-line"></i></h1>
             <article class="modal_popular soleil-matin">
                 <a href="#">
                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo chambre">
@@ -107,7 +108,7 @@ et des activités dans la ville de votre choix.">
 
         </section>
     
-        <!--Section 3 Lodging-->
+        <!--Section Lodging-->
         <section class="lodging_gallery">
             <h2 id="Lodging">Hébergements à Marseille</h2>
             <article class="modal_lodging cannebiere">
@@ -191,7 +192,7 @@ et des activités dans la ville de votre choix.">
             <p><a href="#">Afficher plus</a></p>
         </section>
 
-        <!--Section 4 Activities-->
+        <!--Section Activities-->
         <section class="activities_gallery">
             <h1> id="activites">Activités à Marseille</h1>
             <article class="modal_activities vieux-port">
