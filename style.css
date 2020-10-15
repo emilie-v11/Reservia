@@ -47,9 +47,9 @@ section article{
 img{
     box-sizing: border-box;
     width: 100%;
-    border: solid #999999 5px;
-    padding: 5px;
-    border-radius: 10px;
+    border: solid transparent 5px;
+    padding: 0px;
+    border-radius: 20px;
 }
 
 .filter-title{
@@ -60,7 +60,14 @@ img{
     display: flex;
     justify-content: space-between;
 }
+figure {
+    display: table;
+  }
 
+figcaption {
+    display: table-caption;
+    caption-side: top;
+  }
 
 
 /* Footer */
