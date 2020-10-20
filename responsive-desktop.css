@@ -1,0 +1,71 @@
+/* For desktop: */
+@media only screen and (min-width: 1200px){
+
+    body{
+        margin-left: 40px;
+        margin-right: 40px;
+        min-width: 1200px;
+    }
+    /* Nav .main-navbar */
+    .main-navbar{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        /* Nav Logo */
+
+
+
+        /* Nav ul */
+    ul.main-nav {
+        width: ;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.main-nav li {
+        color: black;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    ul.main-nav a{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    ul.main-nav a:focus {
+        border-top: #0065fc solid 2px;
+        padding-top: 22px;
+    }
+
+    li.log-in{
+        font-weight: bold;
+        color: #0065fc;
+    }
+}
+
+
+
+/********************************************************* Main ******************************************************/
+
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+
+/********************************************************* Footer *****************************************************/
