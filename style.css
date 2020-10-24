@@ -42,7 +42,7 @@ P {
 }
 
 a {
-    font-size: 1rem;;
+    font-size: 1.1rem;;
     text-decoration: none;
     color: #000000;
 }
@@ -58,7 +58,7 @@ li {
 
 header {
     width: 90%;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
@@ -71,11 +71,16 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 108px;
+    height: 112px;
 }
 
 .brand-logo { 
     grid-area: 1 / 1 / 2 / 5 ;
+}
+
+.logo {
+    width: 105px;
+    height: auto;
 }
 
 .main-nav { 
@@ -92,8 +97,7 @@ header {
     justify-items: end;
     color: #0065FC;
     font-weight: 700;
-    padding-left: 35px;
-    padding-bottom: 10px;
+    padding-left: 50px;
 }
 
 .main-nav a {
@@ -113,8 +117,8 @@ header {
 }
 
 .link2 a{
-    padding-left: 60px;
-    padding-right: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
     border-bottom: #F2F2F2 3px solid;
 }
 /* Div Presentation */
