@@ -10,25 +10,24 @@
             State
             Theme
 */
-
-/* BASE */
-
+  
+  /* BASE */
 * {
     font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    font-size: 12px;
+    font-size: 16px;
+    max-width: 100%;
 }
 
 body {
     background-color: #ffffff;
-    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
 h2 {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
 h3 {
@@ -43,7 +42,7 @@ P {
 }
 
 a {
-    font-size:1.1rem;
+    font-size: 1rem;;
     text-decoration: none;
     color: #000000;
 }
@@ -55,43 +54,102 @@ li {
 
 /* LAYOUT */
 
+/************************* header ****************************/
+
 header {
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
+/* main nav */
+.main-navbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 108px;
+}
 
-nav {
-    width: 100%;
+.brand-logo { 
+    grid-area: 1 / 1 / 2 / 5 ;
+}
+
+.main-nav { 
     display: flex;
-    
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: 2 / 1 / 3 / 7; 
+    padding: 0;
 }
 
-ul{
-    flex-flow: row-reverse wrap-reverse;
-
+.sign-up { 
+    grid-area: 1 / 5 / 2 / 7;
+    align-self: center;
+    justify-items: end;
+    color: #0065FC;
+    font-weight: 700;
+    padding-left: 35px;
+    padding-bottom: 10px;
 }
 
-.main-nav li:nth-child(3) {
-    order: 1;
-    
-    
+.main-nav a {
+    padding-bottom: 12px;
 }
+
+.main-nav a:hover {
+    border-bottom: #0065FC 3px solid;
+    color: #0065FC;
+}
+
+.link1 a{
+    justify-items: self-start;
+    padding-left: 45px;
+    padding-right: 40px;
+    border-bottom: #F2F2F2 3px solid;
+}
+
+.link2 a{
+    padding-left: 60px;
+    padding-right: 80px;
+    border-bottom: #F2F2F2 3px solid;
+}
+/* Div Presentation */
+.presentation h1 {
+    margin-top: 30px;
+}
+
+.presentation p {
+    margin-top: 14px;
+}
+
+/************************* main ******************************/
 
 main {
-
-}
-
-footer {
-    background: #F2F2F2 ;
-}
-
     
 }
 
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+}
 
+/* Section Search by City */
+
+
+/* Section Search Filters */
 h2.filter-title {
     font-size: 1.2rem;
 }
 
+small {
+    display: flex;
+    align-content: flex-start;
+}
 
 .fa-info {
     height: 22px;
@@ -99,25 +157,87 @@ h2.filter-title {
     color: #0065FC;
     background-color: #FFFFFF;
     border: 1px solid #F2F2F2;
-    align-items: center;
-    padding-top: 5px;
-    margin-right: 10px;
+    margin-right: 8px;
     border-radius: 50%
 }
 
+.fa-info:before {
+    padding-left: 8px;
+    font-size: 12px;
+}
 
+.info-p {
+    font-weight: 300;
+}
 
+/* Section Most Popular Lodging */
+section.popular-gallery {
+    background: #F2F2F2;
+    width: 100%;
+}
 
-
-
-
-
-.main-nav{
+.chart-line {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
 
+.chart-line p {
+    padding-top: 10px;
+    margin-right: 10px;
 }
 
-a a:visited {
-    color: #0065FC 
+.fa-chart-line:before {
+    font-size: 23px;
 }
 
+/* Section Lodging */
+
+
+/* Section Activities */
+.card-activities {
+    
+}
+
+figcaption {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+}
+
+
+ /*************************** footer *******************************/
+
+ footer {
+    background: #F2F2F2;
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer section {
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+footer h2 {
+    font-size: 1.25rem;
+}
+
+footer ul {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer li {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+footer a {
+    font-size: 1.1rem;
+}
