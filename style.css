@@ -14,35 +14,43 @@
   /* BASE */
 * {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 14.5px;
     max-width: 100%;
+    color: #000000;
 }
 
 body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
-h1,
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 h2 {
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 1.3;
+    font-size: 1.3rem;
 }
 
 P {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
 
 }
 
 a {
-    font-size: 1rem;;
+    font-weight: 500;
+    font-size: 1.1rem;;
     text-decoration: none;
     color: #000000;
 }
@@ -58,7 +66,7 @@ li {
 
 header {
     width: 90%;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
@@ -71,17 +79,22 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 108px;
+    height: 112px;
 }
 
 .brand-logo { 
     grid-area: 1 / 1 / 2 / 5 ;
 }
 
+.logo {
+    width: 100px;
+    height: auto;
+}
+
 .main-nav { 
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+
     grid-area: 2 / 1 / 3 / 7; 
     padding: 0;
 }
@@ -89,11 +102,9 @@ header {
 .sign-up { 
     grid-area: 1 / 5 / 2 / 7;
     align-self: center;
-    justify-items: end;
     color: #0065FC;
     font-weight: 700;
-    padding-left: 35px;
-    padding-bottom: 10px;
+    padding-left: 40px;
 }
 
 .main-nav a {
@@ -107,14 +118,14 @@ header {
 
 .link1 a{
     justify-items: self-start;
-    padding-left: 45px;
+    padding-left: 42px;
     padding-right: 40px;
     border-bottom: #F2F2F2 3px solid;
 }
 
 .link2 a{
-    padding-left: 60px;
-    padding-right: 80px;
+    padding-left: 52px;
+    padding-right: 70px;
     border-bottom: #F2F2F2 3px solid;
 }
 /* Div Presentation */
@@ -128,23 +139,106 @@ header {
 
 /************************* main ******************************/
 
-main {
-    
-}
-
-section {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 100%;
-}
-
 /* Section Search by City */
 
+.search-city {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fa-map-marker-alt {
+    border-radius: 15px 0px 0px 15px;
+    padding: 16.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F2F2F2;
+    position: absolute;
+}
+
+.fa-map-marker-alt:before { 
+    font-size: 18px;
+}                   
+/****** ville /pays en noir et centré */
+.city {
+    font-size: 1.2rem;
+    color: #000000;
+    border: 2px solid #F2F2F2;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    width: 230px;
+    margin-left: 49px;
+    position: relative;
+    z-index: 2;
+    border-right: none;
+    border-left: none;
+}
+ /****** bouton bleu pas par dessus la barre recherche*/
+.btnsearch {
+    border-radius: 15px;
+    border: 1px  #0065FC solid;
+    padding: 15px;
+    background-color: #0065FC;
+    position: absolute;
+    z-index: 1;
+}
+
+.fa-search {
+    color: #FFFFFF;
+}
+
+.fa-search:before {
+    font-size: 18px;
+}
+
+.search {
+    display: none;
+}
 
 /* Section Search Filters */
-h2.filter-title {
-    font-size: 1.2rem;
+
+.search-filters {
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+h2.filter-title {
+    font-size: 1.3rem;
+    margin-top: 34px;
+    margin-bottom: 9px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-filter {
+    border-radius: 25px ;
+    border: #D9D9D9 2px solid;
+    margin: 7px;
+    background-color: #FFFFFF;
+}
+
+.button-filter i {
+    color: #0065FC;
+    font-size: 19px;
+    border-radius: 50%;
+    border: 2px solid #DEEBFF;
+    background-color: #DEEBFF;
+    padding: 12px;
+    margin-left: 0px;
+}
+
+.name-filter {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-right: 7px;
+    padding-left: 0;
+}
+
+
+
 
 small {
     display: flex;
@@ -171,25 +265,25 @@ small {
 }
 
 /* Section Most Popular Lodging */
+
 section.popular-gallery {
     background: #F2F2F2;
     width: 100%;
 }
 
-.chart-line {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+.popular-title {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     }
 
-.chart-line p {
-    padding-top: 10px;
-    margin-right: 10px;
+.fa-chart-line {
+    padding-left: 115px;
 }
 
 .fa-chart-line:before {
-    font-size: 23px;
+    font-size: 22px;
 }
 
 /* Section Lodging */
@@ -200,11 +294,67 @@ section.popular-gallery {
     
 }
 
-figcaption {
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
+img {
+    object-fit: cov
 }
+
+.card-activities figcaption.caption-img {
+    /*background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;*/
+
+}
+
+.activity {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 8rem 2rem 2rem 2rem 9rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+
+.activity_card {
+    background-color: var(--bg-grey);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    width: 330px;
+    height: 190px;
+}
+
+.activity_card_wrapping {
+    flex: 1;
+    position: absolute;
+}
+
+.activity_card_wrapping_img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activity_card_title {
+    margin: 1rem;
+    z-index: 2;
+    position: a;
+    bottom: 0;
+    background: #FFFFFF;
+    width: 335px;
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    object-fit: cover;
+}
+
 
 
  /*************************** footer *******************************/
@@ -212,19 +362,20 @@ figcaption {
  footer {
     background: #F2F2F2;
     width: 100%;
-    padding-bottom: 35px;
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
 }
 
 footer section {
-    padding-left: 20px;
-    padding-top: 12px;
+    padding-left: 28px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 footer h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 footer ul {
@@ -240,4 +391,5 @@ footer li {
 
 footer a {
     font-size: 1.1rem;
+    font-weight: 400;
 }
