@@ -1,0 +1,247 @@
+/*  Font:   Raleway
+    Color:  blue: #0065FC 
+            blue-light: #DEEBFF
+            white: #FFFFFF
+            Grey-light: #F2F2F2
+
+    SMACSS: Base
+            Layout
+            Module
+            State
+            Theme
+*/
+  
+  /* BASE */
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.3;
+}
+
+P {
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+a {
+    font-size: 1.1rem;;
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* LAYOUT */
+
+/************************* header ****************************/
+
+header {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+/* main nav */
+.main-navbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 112px;
+}
+
+.brand-logo { 
+    grid-area: 1 / 1 / 2 / 5 ;
+}
+
+.logo {
+    width: 105px;
+    height: auto;
+}
+
+.main-nav { 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: 2 / 1 / 3 / 7; 
+    padding: 0;
+}
+
+.sign-up { 
+    grid-area: 1 / 5 / 2 / 7;
+    align-self: center;
+    justify-items: end;
+    color: #0065FC;
+    font-weight: 700;
+    padding-left: 50px;
+}
+
+.main-nav a {
+    padding-bottom: 12px;
+}
+
+.main-nav a:hover {
+    border-bottom: #0065FC 3px solid;
+    color: #0065FC;
+}
+
+.link1 a{
+    justify-items: self-start;
+    padding-left: 45px;
+    padding-right: 40px;
+    border-bottom: #F2F2F2 3px solid;
+}
+
+.link2 a{
+    padding-left: 70px;
+    padding-right: 70px;
+    border-bottom: #F2F2F2 3px solid;
+}
+/* Div Presentation */
+.presentation h1 {
+    margin-top: 30px;
+}
+
+.presentation p {
+    margin-top: 14px;
+}
+
+/************************* main ******************************/
+
+main {
+    
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+}
+
+/* Section Search by City */
+
+
+/* Section Search Filters */
+h2.filter-title {
+    font-size: 1.2rem;
+}
+
+small {
+    display: flex;
+    align-content: flex-start;
+}
+
+.fa-info {
+    height: 22px;
+    width: 22px;
+    color: #0065FC;
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    margin-right: 8px;
+    border-radius: 50%
+}
+
+.fa-info:before {
+    padding-left: 8px;
+    font-size: 12px;
+}
+
+.info-p {
+    font-weight: 300;
+}
+
+/* Section Most Popular Lodging */
+section.popular-gallery {
+    background: #F2F2F2;
+    width: 100%;
+}
+
+.chart-line {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+
+.chart-line p {
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.fa-chart-line:before {
+    font-size: 23px;
+}
+
+/* Section Lodging */
+
+
+/* Section Activities */
+.card-activities {
+    
+}
+
+figcaption {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+}
+
+
+ /*************************** footer *******************************/
+
+ footer {
+    background: #F2F2F2;
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer section {
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+footer h2 {
+    font-size: 1.25rem;
+}
+
+footer ul {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer li {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+footer a {
+    font-size: 1.1rem;
+}
