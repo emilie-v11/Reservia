@@ -49,14 +49,14 @@ et des activités dans la ville de votre choix.">
         <!--Section search by city-->
         <section class="search-city">
             <!--Form Search by city-->
-            <form class="city-searchbar">
+            <div class="city-searchbar">
                 <i class="fas fa-map-marker-alt"></i>
                 <input class="city" type="search" name="city" placeholder="Marseille, France" autofocus>
                 <button class="btnsearch" type="submit">
-                <span class="search">Rechercher</span>
-                <i class="fas fa-search"></i>
+                    <span class="search">Rechercher</span>
+                    <i class="fas fa-search"></i>
                 </button>
-            </form>
+            </div>
         </section>
         
         <!--Section Search Filters-->
@@ -65,22 +65,28 @@ et des activités dans la ville de votre choix.">
             <h2 class="filter-title">Filtres</h2>
             <!-- filters icons-->
             <div class="filters">
-                <button class="button-filter 1">
-                    <i class="fas fa-money-bill-wave fa-fw"></i>
+                <button class="button-filter filter1">
+                    <i class="fas fa-money-bill-wave"></i>
                     <span class="name-filter">Économique</span>
                 </button>
-                <button class="button-filter 2">
-                    <i class="fas fa-child fa-fw"></i>
-                    <span class="name-filter">Familial</span>
+                <button class="button-filter filter2">
+                    <i class="fas fa-child"></i>
+                    <h3 class="name-filter">Familial</h3>
                 </button>
-                <button class="button-filter 3">
-                    <i class="fas fa-heart fa-fw"></i>
+                <button class="button-filter filter3">
+                    <i class="fas fa-heart"></i>
                     <span class="name-filter">Romantique</span>
                 </button>
-                <button class="button-filter 4">
-                    <i class="fas fa-dog fa-fw"></i>
-                    <span class="name-filter">Animaux autorisés</span>
-                </button>
+                
+                <form>
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <i class="fas fa-dog"></i>
+                        <input class="filter filter4" type="button" name="search" value="Animaux autorisés">
+                    </div>
+                </form>
             </div>
             <!--Quantity of lodgings available for The selected city-->
             <small>

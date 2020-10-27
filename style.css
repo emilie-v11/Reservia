@@ -109,6 +109,7 @@ header {
 
 .main-nav a {
     padding-bottom: 12px;
+    min-width: 50%;
 }
 
 .main-nav a:hover {
@@ -144,43 +145,52 @@ header {
 .search-city {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .fa-map-marker-alt {
     border-radius: 15px 0px 0px 15px;
-    padding: 16.5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #F2F2F2;
     position: absolute;
 }
 
-.fa-map-marker-alt:before { 
+.fa-map-marker-alt::before { 
     font-size: 18px;
+    text-align: center;
 }                   
-/****** ville /pays en noir et centré */
+
 .city {
-    font-size: 1.2rem;
-    color: #000000;
+    font-size: 1.25rem;
     border: 2px solid #F2F2F2;
-    font-weight: 600;
+    font-weight: 700;
     padding-top: 15px;
     padding-bottom: 12px;
-    width: 230px;
-    margin-left: 49px;
-    position: relative;
-    z-index: 2;
+    padding-right: 30px;
+    margin-left: 52px;
     border-right: none;
     border-left: none;
+    position: absolute;
 }
- /****** bouton bleu pas par dessus la barre recherche*/
+
+.city::placeholder {
+    color: #000000;
+    text-align: center;
+}
+
+ /****** mauvaise imbrication input et button right /bouton bleu pas par dessus la barre recherche*/
 .btnsearch {
     border-radius: 15px;
     border: 1px  #0065FC solid;
     padding: 15px;
     background-color: #0065FC;
+    float: right;
+    z-index: ;
     position: absolute;
-    z-index: 1;
+    left: 292px;
 }
 
 .fa-search {
@@ -195,17 +205,32 @@ header {
     display: none;
 }
 
+@media only screen and (min-width: 600px) {
+    .search {
+        display: contents;
+        color: #FFFFFF;
+    }
+    .fa-search {
+        display: none;
+    }
+    .btnsearch {
+        border-radius: 0px 15px 15px 0px;
+    }
+
+}
+
 /* Section Search Filters */
 
 .search-filters {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
 }
 
 h2.filter-title {
     font-size: 1.3rem;
-    margin-top: 34px;
-    margin-bottom: 9px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .filters {
@@ -216,8 +241,32 @@ h2.filter-title {
 .button-filter {
     border-radius: 25px ;
     border: #D9D9D9 2px solid;
-    margin: 7px;
+    margin-bottom: 12px;
     background-color: #FFFFFF;
+    border-left: none;
+    padding-left: 0;
+    
+}
+
+.filter1 {
+    width: 180px;
+    height: 45px;
+    margin-right: 12px;
+}
+
+.filter2 {
+    width: 140px;
+    height: 45px;
+}
+
+.filter3 {
+    width: 170px;
+    height: 45px;
+}
+
+.filter4 {
+    width: 220px;
+    height: 52px;
 }
 
 .button-filter i {
@@ -227,7 +276,7 @@ h2.filter-title {
     border: 2px solid #DEEBFF;
     background-color: #DEEBFF;
     padding: 12px;
-    margin-left: 0px;
+    float: left;
 }
 
 .name-filter {
@@ -235,6 +284,32 @@ h2.filter-title {
     font-size: 1.1rem;
     padding-right: 7px;
     padding-left: 0;
+}
+/*essai de button différent ********************/
+.fa-dog {
+    color: #0065FC;
+    font-size: 19px;
+    border-radius: 50%;
+    border: 2px solid #DEEBFF;
+    background-color: #DEEBFF;
+    padding: 13px;
+    position: absolute;
+}
+
+i.fas.fa-dog::before {
+    width: 22px;
+    height: 22px;
+}
+
+.filter {
+    border-radius: 25px ;
+    border: #D9D9D9 2px solid;
+    margin-bottom: 12px;
+    background-color: #FFFFFF;
+    border-left: 0;
+    padding-left: 48px;
+    font-weight: 700;
+    font-size: 1.15rem;
 }
 
 
