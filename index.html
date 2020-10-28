@@ -53,8 +53,8 @@ et des activités dans la ville de votre choix.">
                 <i class="fas fa-map-marker-alt"></i>
                 <input class="city" type="search" name="city" placeholder="Marseille, France" autofocus>
                 <button class="btnsearch" type="submit">
-                    <span class="search">Rechercher</span>
-                    <i class="fas fa-search"></i>
+                <span class="search">Rechercher</span>
+                <i class="fas fa-search"></i>
                 </button>
             </div>
         </section>
@@ -64,32 +64,32 @@ et des activités dans la ville de votre choix.">
             <!-- filters title -->
             <h2 class="filter-title">Filtres</h2>
             <!-- filters icons-->
+
             <div class="filters">
-                <button class="button-filter filter1">
+                <!--<button class="button-filter filter1">
                     <i class="fas fa-money-bill-wave"></i>
                     <span class="name-filter">Économique</span>
-                </button>
-                <button class="button-filter filter2">
+                </button>-->
+                <div>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <input class="filter filter1" type="button" name="search" value="Économique">
+                </div>
+                <div>
                     <i class="fas fa-child"></i>
-                    <h3 class="name-filter">Familial</h3>
-                </button>
-                <button class="button-filter filter3">
+                    <input class="filter filter2" type="button" name="search" value="Familial">
+                </div>
+                <div>
                     <i class="fas fa-heart"></i>
-                    <span class="name-filter">Romantique</span>
-                </button>
-                
-                <form>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        <i class="fas fa-dog"></i>
-                        <input class="filter filter4" type="button" name="search" value="Animaux autorisés">
-                    </div>
-                </form>
+                    <input class="filter filter3" type="button" name="search" value="Romantique">
+                </div>
+                <div>
+                    <i class="fas fa-dog"></i>
+                    <input class="filter filter4" type="button" name="search" value="Animaux autorisés">
+                </div>
             </div>
+            
             <!--Quantity of lodgings available for The selected city-->
-            <small>
+            <small class="info">
                 <p><i class="fas fa-info"></i></p>
                 <p class="info-p">Plus de 500 logements sont disponibles dans cette ville</p>
             </small> 
@@ -99,7 +99,10 @@ et des activités dans la ville de votre choix.">
         <section class="popular-gallery">
             <!--"chart-line"-->
             <!--Section title Most popular + icon chart-line-->
-            <h2 class="popular-title">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+            <div class="bloc-popular-title">
+                <h2 class="popular-title">Les plus populaires</h2>
+                <p><i class="fas fa-chart-line"></i></p>
+            </div>
             
             <!-- cards most popular lodging-->
             <article class="modal_popular soleil-matin">
