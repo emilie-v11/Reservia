@@ -90,6 +90,11 @@ header {
     height: auto;
 }
 
+.logo {
+    width: 105px;
+    height: auto;
+}
+
 .main-nav { 
     display: flex;
     justify-content: center;
