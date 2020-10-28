@@ -38,8 +38,8 @@ et des activités dans la ville de votre choix.">
         </nav>
         <div class="presentation">
         <!--header title-->
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
         </div>
     </header>
 
@@ -47,16 +47,16 @@ et des activités dans la ville de votre choix.">
     <main class="main-wrap">
 
         <!--Section search by city-->
-        <section class="search">
+        <section class="search-city">
             <!--Form Search by city-->
-            <form class="city-searchbar">
+            <div class="city-searchbar">
                 <i class="fas fa-map-marker-alt"></i>
                 <input class="city" type="search" name="city" placeholder="Marseille, France" autofocus>
                 <button class="btnsearch" type="submit">
                 <span class="search">Rechercher</span>
                 <i class="fas fa-search"></i>
                 </button>
-            </form>
+            </div>
         </section>
         
         <!--Section Search Filters-->
@@ -64,26 +64,32 @@ et des activités dans la ville de votre choix.">
             <!-- filters title -->
             <h2 class="filter-title">Filtres</h2>
             <!-- filters icons-->
-            <div>
-                <button class="filter-icon 1">
-                    <i class="fas fa-money-bill-wave fa-fw"></i>
+
+            <div class="filters">
+                <!--<button class="button-filter filter1">
+                    <i class="fas fa-money-bill-wave"></i>
                     <span class="name-filter">Économique</span>
-                </button>
-                <button class="filter-icon 2">
-                    <i class="fas fa-child fa-fw"></i>
-                    <span class="name-filter">Familial</span>
-                </button>
-                <button class="filter-icon 3">
-                    <i class="fas fa-heart fa-fw"></i>
-                    <span class="name-filter">Romantique</span>
-                </button>
-                <button class="filter-icon 4">
-                    <i class="fas fa-dog fa-fw"></i>
-                    <span class="name-filter">Animaux autorisés</span>
-                </button>
+                </button>-->
+                <div>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <input class="filter filter1" type="button" name="search" value="Économique">
+                </div>
+                <div>
+                    <i class="fas fa-child"></i>
+                    <input class="filter filter2" type="button" name="search" value="Familial">
+                </div>
+                <div>
+                    <i class="fas fa-heart"></i>
+                    <input class="filter filter3" type="button" name="search" value="Romantique">
+                </div>
+                <div>
+                    <i class="fas fa-dog"></i>
+                    <input class="filter filter4" type="button" name="search" value="Animaux autorisés">
+                </div>
             </div>
+            
             <!--Quantity of lodgings available for The selected city-->
-            <small>
+            <small class="info">
                 <p><i class="fas fa-info"></i></p>
                 <p class="info-p">Plus de 500 logements sont disponibles dans cette ville</p>
             </small> 
@@ -91,12 +97,13 @@ et des activités dans la ville de votre choix.">
 
         <!--Section Most popular lodging-->
         <section class="popular-gallery">
-            <div class="chart-line">
-                <!--Section title Most popular-->
-                <h2 class="popular-title">Les plus populaires</i></h2>
-                <!--icon chart-line-->
+            <!--"chart-line"-->
+            <!--Section title Most popular + icon chart-line-->
+            <div class="bloc-popular-title">
+                <h2 class="popular-title">Les plus populaires</h2>
                 <p><i class="fas fa-chart-line"></i></p>
             </div>
+            
             <!-- cards most popular lodging-->
             <article class="modal_popular soleil-matin">
                 <a class="" href="#">
@@ -286,14 +293,22 @@ et des activités dans la ville de votre choix.">
                 </a>
             </div>
 
-            <div class="card-activities">
-                <a href="#">
-                    <figure class="img">
-                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp">
-                        <figcaption class="content">Parc Longchamp</figcaption>
-                    </figure>
-                </a>
-            </div>
+            
+            <a href="#">
+                <figure class="card-activities 6">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp">
+                    <figcaption class="caption-img">Parc Longchamp</figcaption>
+                </figure>
+            </a>
+
+            <a href="#" class="activity_card activity_card_6">
+                <div class="activity_card_wrapping" class="activity_card">
+                    <img class="activity_card_wrapping_img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp">
+                </div>
+                <h3 class="activity_card_title">Parc Longchamp</h3>
+            </a>
+        
+
 
         </section>
 
@@ -301,30 +316,33 @@ et des activités dans la ville de votre choix.">
 
     <!--Website Footer-->
     <footer>
+        <nav>
         <!--Useful informations Navigation Links-->
-        <section>
-            <h2>A propos</h2>
-            <ul>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Nos hébergements</h2>
-            <ul>
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre hôtel</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Assistance</h2>
-            <ul>
-                <li><a href="#">Centre d'aide</a></li>
-                <!--Contact Form link-->
-                <li><a href="#">Nous contacter</a></li>
-            </ul>
-        </section>
+            <section>
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <!--Contact Form link-->
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </section>
+        </nav>
     </footer>
+
 </body>
 </html>

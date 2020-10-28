@@ -14,34 +14,41 @@
   /* BASE */
 * {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 14.5px;
     max-width: 100%;
+    color: #000000;
 }
 
 body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-h1,
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 h2 {
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 1.3;
+    font-size: 1.3rem;
 }
 
 P {
     font-weight: 500;
-    font-size: 1rem;
-
+    font-size: 1.1rem;
 }
 
 a {
+    font-weight: 500;
     font-size: 1.1rem;;
     text-decoration: none;
     color: #000000;
@@ -62,20 +69,25 @@ header {
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    
 }
-/* main nav */
+
+            /* main nav */
 .main-navbar {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 112px;
+    height: 110px;
 }
 
 .brand-logo { 
-    grid-area: 1 / 1 / 2 / 5 ;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
 }
 
 .logo {
@@ -86,22 +98,21 @@ header {
 .main-nav { 
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    grid-area: 2 / 1 / 3 / 7; 
+    grid-area: 2 / 2 / 3 / 8; 
     padding: 0;
 }
 
 .sign-up { 
-    grid-area: 1 / 5 / 2 / 7;
+    grid-area: 1 / 6 / 2 / 8;
     align-self: center;
-    justify-items: end;
     color: #0065FC;
     font-weight: 700;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 .main-nav a {
     padding-bottom: 12px;
+    min-width: 50%;
 }
 
 .main-nav a:hover {
@@ -109,15 +120,14 @@ header {
     color: #0065FC;
 }
 
-.link1 a{
-    justify-items: self-start;
-    padding-left: 45px;
+.link1 a {
+    padding-left: 42px;
     padding-right: 40px;
     border-bottom: #F2F2F2 3px solid;
 }
 
-.link2 a{
-    padding-left: 70px;
+.link2 a {
+    padding-left: 52px;
     padding-right: 70px;
     border-bottom: #F2F2F2 3px solid;
 }
@@ -130,29 +140,177 @@ header {
     margin-top: 14px;
 }
 
+@media only screen and (max-width: 350px) {
+    .sign-up {
+        padding-left: 20px;
+    }
+    .link1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .link2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 /************************* main ******************************/
 
-main {
-    
-}
-
-section {
+            /* Section Search by City */
+.search-city {
     padding-left: 20px;
     padding-right: 20px;
-    max-width: 100%;
+    padding-bottom: 20px;
 }
 
-/* Section Search by City */
+.fa-map-marker-alt {
+    border-radius: 15px 0px 0px 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F2F2F2;
+    position: absolute;
+}
 
+.fa-map-marker-alt::before { 
+    font-size: 18px;
+    text-align: center;
+}                   
 
-/* Section Search Filters */
+.city {
+    font-size: 1.25rem;
+    border: 1px solid #F2F2F2;
+    font-weight: 700;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-right: 50px;
+    margin-left: 52px;
+    border-right: none;
+    border-left: none;
+    width: 240px;
+    position: absolute;
+}
+
+.city::placeholder {
+    color: #000000;
+    text-align: center;
+}
+
+.btnsearch {
+    border-radius: 15px;
+    border: 1px  #0065FC solid;
+    padding: 15px;
+    background-color: #0065FC;
+    float: right;
+    position: absolute;
+    left: 300px;
+}
+
+@media only screen and (max-width: 350px) {
+    .btnsearch {
+        position: absolute;
+        left: 262px;
+    }
+    .city {
+        padding-right: 20px;
+        width: 200px;
+    }
+}
+
+.fa-search {
+    color: #FFFFFF;
+}
+
+.fa-search:before {
+    font-size: 18px;
+}
+
+.search {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .search {
+        display: contents;
+        color: #FFFFFF;
+    }
+    .fa-search {
+        display: none;
+    }
+    .btnsearch {
+        border-radius: 0px 15px 15px 0px;
+    }
+}
+         /****** Section Search Filters ******/
+.search-filters {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
+}
+
 h2.filter-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-small {
+.filters {
     display: flex;
-    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.filter {
+    border-radius: 25px ;
+    border: #D9D9D9 2px solid;
+    margin-bottom: 12px;
+    background-color: #FFFFFF;
+    border-left: 0;
+    padding-left: 48px;
+    font-weight: 700;
+    font-size: 1.15rem;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.filter1 {
+    width: 175px;
+}
+
+.filter2 {
+    width: 140px;
+}
+
+.filter3 {
+    width: 170px;
+}
+
+.filter4 {
+    width: 220px;
+}
+
+.filters i.fas {
+    color: #0065FC;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 2px solid #DEEBFF;
+    background-color: #DEEBFF;
+    padding: 13px;
+    position: absolute;
+}
+
+.filters i.fas::before {
+    font-size: 1.25rem;
+}
+
+i.fas.fa-money-bill-wave::before {
+    font-size: 1.1rem;
+}
+
+/* info */
+.info {
+    display: flex;
+    flex: row;
 }
 
 .fa-info {
@@ -160,55 +318,115 @@ small {
     width: 22px;
     color: #0065FC;
     background-color: #FFFFFF;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     margin-right: 8px;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .fa-info:before {
     padding-left: 8px;
     font-size: 12px;
+    font-weight: 600;
 }
 
 .info-p {
     font-weight: 300;
 }
 
-/* Section Most Popular Lodging */
+.info {
+    display: flex;
+}
+
+            /****** Section Most Popular Lodging ******/
+
 section.popular-gallery {
     background: #F2F2F2;
     width: 100%;
 }
 
-.chart-line {
+.bloc-popular-title {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
-    }
-
-.chart-line p {
-    padding-top: 10px;
-    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .fa-chart-line:before {
-    font-size: 23px;
+    font-size: 22px;
 }
 
-/* Section Lodging */
+            /****** Section Lodging ******/
 
 
-/* Section Activities */
+
+
+            /****** Section Activities ******/
+
 .card-activities {
     
 }
 
-figcaption {
-    background-color: #FFFFFF;
+/*img {
+    object-fit: cover;
+}*/
+
+.card-activities figcaption.caption-img {
+    /*background-color: #FFFFFF;
     color: #000000;
-    text-align: center;
+    text-align: center;*/
+
 }
+
+.activity {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 8rem 2rem 2rem 2rem 9rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+
+.activity_card {
+    background-color: var(--bg-grey);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    /*width: 330px;*/
+    height: 190px;
+}
+
+.activity_card_wrapping {
+    flex: 1;
+    position: absolute;
+}
+
+.activity_card_wrapping_img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activity_card_title {
+    margin: 1rem;
+    z-index: 2;
+    position: a;
+    bottom: 0;
+    background: #FFFFFF;
+    width: 335px;
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    object-fit: cover;
+}
+
 
 
  /*************************** footer *******************************/
@@ -216,19 +434,18 @@ figcaption {
  footer {
     background: #F2F2F2;
     width: 100%;
-    padding-bottom: 35px;
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 25px;
 }
 
 footer section {
-    padding-left: 20px;
-    padding-top: 12px;
+    padding-left: 28px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 footer h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 footer ul {
@@ -244,4 +461,5 @@ footer li {
 
 footer a {
     font-size: 1.1rem;
+    font-weight: 400;
 }
