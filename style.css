@@ -64,25 +64,31 @@ li {
 /************************* header ****************************/
 
 header {
-    width: 90%;
+    /*width: 90%;*/
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
 }
 
             /* main nav */
 .main-navbar {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px;*/
     height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .brand-logo { 
-    grid-area: 1 / 1 / 2 / 4;
+   /*grid-area: 1 / 1 / 2 / 4;*/
+   order: 1;
+   padding-left: 20px;
 }
 
 .logo {
@@ -93,21 +99,23 @@ header {
 .main-nav { 
     display: flex;
     justify-content: center;
-    grid-area: 2 / 2 / 3 / 8; 
+    /*grid-area: 2 / 2 / 3 / 8;*/
     padding: 0;
+    order: 3;
 }
 
 .sign-up { 
-    grid-area: 1 / 6 / 2 / 8;
+    /*grid-area: 1 / 6 / 2 / 8;*/
     align-self: center;
+    order: 2;
     color: #0065FC;
     font-weight: 700;
-    padding-left: 40px;
+    padding-right: 20px;
 }
 
 .main-nav a {
     padding-bottom: 12px;
-    min-width: 50%;
+    max-width: 50%;
 }
 
 .main-nav a:hover {
@@ -127,6 +135,11 @@ header {
     border-bottom: #F2F2F2 3px solid;
 }
 /* Div Presentation */
+
+.presentation {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .presentation h1 {
     margin-top: 30px;
 }
@@ -136,16 +149,18 @@ header {
 }
 
 @media only screen and (max-width: 350px) {
-    .sign-up {
+    /*.sign-up {
         padding-left: 20px;
-    }
+    }*/
     .link1 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+        /*padding-left: 20px;
+        padding-right: 20px;*/
+        max-width: 50%;
+
     .link2 {
-        padding-left: 20px;
-        padding-right: 20px;
+        /*padding-left: 20px;
+        padding-right: 20px;*/
+        max-width: 50%;
     }
 }
 
@@ -237,7 +252,8 @@ header {
         border-radius: 0px 15px 15px 0px;
     }
 }
-         /****** Section Search Filters ******/
+         /****** Section Search Filters ******/    
+
 .search-filters {
     padding-left: 20px;
     padding-right: 20px;
@@ -263,7 +279,7 @@ h2.filter-title {
     border-left: 0;
     padding-left: 48px;
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     height: 48px;
     margin-right: 10px;
 }
@@ -295,11 +311,17 @@ h2.filter-title {
 }
 
 .filters i.fas::before {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 i.fas.fa-money-bill-wave::before {
     font-size: 1.1rem;
+}
+
+i.fas.fa-child::before {
+    font-size: 1.35rem;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 /* info */
@@ -309,13 +331,16 @@ i.fas.fa-money-bill-wave::before {
 }
 
 .fa-info {
-    height: 22px;
-    width: 22px;
+    height: 21px;
+    width: 21px;
     color: #0065FC;
     background-color: #FFFFFF;
-    border: 2px solid #F2F2F2;
+    border: 1px solid #D9D9D9;
     margin-right: 8px;
     border-radius: 50%;
+    padding-top: 2px;
+    padding-left: 2px;
+    font-weight: 400;
 }
 
 .fa-info:before {
@@ -352,26 +377,52 @@ section.popular-gallery {
 
             /****** Section Lodging ******/
 
-
+.lodging-gallery h2 {
+    padding-left: 20px;
+    margin-top: 35px;
+}
 
 
             /****** Section Activities ******/
 
-.card-activities {
+.activities-card-wrapping {
+    background-color: #FFFFFF;
+    width: 315px;
+    height: 190px;
+    border-radius: 25px;
+    box-shadow: #D9D9D9 20px 15px 20px -10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.activities-card-img {
+    /*width: 280px;*/
+    width: 100%;
+    height: 190px;
+    margin: 0px 0px 5px 0px;
+    border-radius: 25px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.activities-card-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    padding-left: 18px;
+    position: relative;
+    bottom: 60px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 25px 25px;
     
 }
 
-/*img {
-    object-fit: cover;
-}*/
-
-.card-activities figcaption.caption-img {
-    /*background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;*/
-
-}
-
+/*
 .activity {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -391,7 +442,7 @@ section.popular-gallery {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
-    /*width: 330px;*/
+    width: 330px;
     height: 190px;
 }
 
@@ -421,8 +472,7 @@ section.popular-gallery {
     font-size: 1.1rem;
     object-fit: cover;
 }
-
-
+*/
 
  /*************************** footer *******************************/
 
