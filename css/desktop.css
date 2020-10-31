@@ -1,10 +1,8 @@
-/* For desktop: */
+/* For desktop - Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1200px){
-
-    body{
-        margin-left: 40px;
-        margin-right: 40px;
-        min-width: 1200px;
+    header, main {
+        max-width: 1240px;
+        padding-left: 20%;
     }
     /* Nav .main-navbar */
     .main-navbar{
@@ -12,18 +10,15 @@
         display: flex;
         justify-content: space-between;
     }
-
-        /* Nav Logo */
-
-
-
+        /* searchbar */
+    .btnsearch {
+        float: right;
+    }
         /* Nav ul */
     ul.main-nav {
-        width: ;
         display: flex;
         justify-content: flex-end;
     }
-
     ul.main-nav li {
         color: black;
         margin-left: 20px;
@@ -45,6 +40,35 @@
         font-weight: bold;
         color: #0065fc;
     }
+    /* section search-city*/
+    .search {
+        display: contents;
+        color: #FFFFFF;
+    }
+    .fa-search {
+        display: none;
+    }
+    .btnsearch {
+        border-radius: 0px 15px 15px 0px;
+    }
+    /*Section Activities*/
+    .container-activities {
+        display: grid;
+        
+    }
+
+    /*footer*/
+    footer {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .nav-footer {
+        display: flex;
+    }
+    .nav-footer section {
+        padding-right: 100px;
+    }
+
 }
 
 
