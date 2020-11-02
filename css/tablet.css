@@ -1,52 +1,40 @@
 /* For tablet - Medium devices (large laptops and desktops) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     /*header*/
-    .header {
-        padding-top: 10px;
-    }
-    /*.main-navbar {
-        display: none;
-        width: 100%;
-        height: 60px;
-    }*/
     .main-navbar{
-        max-width: 100%;
+        padding-top: 10px;
+       /* max-width: 100%;
         display: flex;
-        justify-content: space-between;
-    }
-    ul.main-nav {
-        width: ;
-        display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;*/
     }
     .brand-logo {
         margin-left: 20px;
     }
-    .link2 {
-        padding-right: 120px;
-    }
     .sign-up {
         position: absolute;
         right: 20px;
-        top: 25px;
+        top: 50px;
         padding-right: 10px;
     }
-    .link1 a {
-        padding-left: 30px;
-        padding-right: 30px;
+    /* Main */
+
+    /* section search-city */
+    .presentation {
+       padding: 0;
+       padding-bottom: 20px;
+       margin-left: 30px;
     }
 
-    .link1 a, .link2 a {
-        border-bottom: 3px #FFFFFF solid;
-        border;
+    .searchbar {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .city {
+        width: 80%;
+        max-width: 480px;
     }
 
-    .link1 a, .link2 a:hover {
-        border-top: 3px solid #0065FC;
-        padding-top: 20px;
-    }
-
-    /* section search-city*/
     span.search {
         display: contents;
         color: #FFFFFF;
@@ -57,23 +45,45 @@
     .btnsearch {
         border-radius: 0px 15px 15px 0px;
     }
+    
+    /* section search filters */
+    .search-filters {
+        margin-left: 20px;
+    }
+    .filter-title {
+        margin-left: 10px;
+    }
+    .filters {
+        margin-left: 50px;
+    }
+    .filter {
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+    
     /*section popular*/
     .bloc-popular-title {
-        width: 100%;
+        /*padding-left: 0;
+        padding-right: 0;*/
+        justify-content: initial;
     }
     .bloc-popular-title h2 {
         margin-left: 25px;
     }
     .bloc-popular-title p {
         margin-right: 25px;
+        margin-left: auto;
     }
+    /*sections containers*/
     .container-popular, .container-lodgings, .container-activities {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .popular-card-wrapping, .lodgings-card-wrapping, .activities-card-wrapping {
         width: 330px;
+        margin: 20px;
     }
     /*footer*/
     .nav-footer {
