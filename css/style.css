@@ -176,9 +176,10 @@ header {
     position: absolute;*/
     
     /*modifier par rapport 31/10*/
-    max-width: 300px;
+    max-width: 340px;
     text-align: center; /* essayer de supprimer ou de garder*/
-    margin-left: 10px;
+    /*margin-left: 10px;*/
+    border-radius: 15px;
 }
 
 .city:focus {
@@ -214,7 +215,7 @@ header {
 }
 
          /****** Section Search Filters ******/    
-
+/*section search-filters*/
 .search-filters {
     padding-left: 20px;
     padding-right: 20px;
@@ -233,17 +234,21 @@ h2.filter-title {
 }
 
 /* filter */
+.button-filter {
+    margin-bottom: 12px;
+    margin-right: 10px;
+}
 .filter {
     border-radius: 25px ;
     border: #D9D9D9 2px solid;
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;*/
     background-color: #FFFFFF;
     border-left: 0;
     padding-left: 48px;
     font-weight: 700;
     font-size: 1.1rem;
-    height: 48px;
-    margin-right: 10px;
+    height: 50px;
+    /*margin-right: 10px;*/
 }
 
 .filter:hover {
@@ -258,44 +263,46 @@ h2.filter-title {
     outline: none;
 }
 
-.filter1 {
+.filter1,
+.button-filter1 {
     width: 175px;
 }
 
-.filter2 {
+.filter2,
+.button-filter2 {
     width: 140px;
 }
 
-.filter3 {
+.filter3,
+.button-filter3 {
     width: 170px;
 }
 
-.filter4 {
+.filter4,
+.button-filter4 {
     width: 220px;
 }
 
 .filters i.fas {
     color: #0065FC;
-    font-size: 18px;
+    height: 19px;
+    width: 19px;
     border-radius: 50%;
-    border: 2px solid #DBE9FE;
+    border: 3px solid #DBE9FE;
     background: #DEEBFF;
     padding: 13px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filters i.fas::before {
-    font-size: 1.3rem;
-}
-
-i.fas.fa-money-bill-wave::before {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 i.fas.fa-child::before {
-    font-size: 1.35rem;
-    padding-left: 2px;
-    padding-right: 2px;
+    font-size: 1.5rem;
 }
 
 /* icon info + p info */
@@ -313,13 +320,16 @@ i.fas.fa-child::before {
     border: 1px solid #D9D9D9;
     margin-right: 8px;
     border-radius: 50%;
-    padding-top: 2px;
-    padding-left: 2px;
+    /*padding-top: 2px;
+    padding-left: 2px;*/
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa-info:before {
-    padding-left: 8px;
+    /*padding-left: 8px;*/
     font-size: 12px;
     font-weight: 600;
 }
@@ -606,9 +616,6 @@ footer a {
     .btnsearch {
         right: 10px;
     }
-    .city {
-        max-width: 280px;
-    }
     /*Section Most Popular*/
     .popular-card-title {
         font-size: 14px;
@@ -627,17 +634,14 @@ footer a {
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {    
     /*section search by city*/
-    .searchbar { /* .city */
-        width: 80%;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+    .searchbar {
+        max-width: 400px;
     }
     .city {
-        max-width: 90%;
+        max-width: 100%;
     }
     /*section search-filters*/
-    .filter {
+    .button-filter {
         margin-right: 30px;
         margin-bottom: 20px;
     }
@@ -646,4 +650,5 @@ footer a {
         padding-left: 15px;
         padding-right: 15px;
     }
+    
 }

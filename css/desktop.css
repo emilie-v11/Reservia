@@ -1,7 +1,12 @@
 /* For desktop - Extra large devices (large laptops and desktops) */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px) and (max-width: 1400px){
+    *{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     header, main {
-        max-width: 1240px;
+        
         padding-left: 20%;
     }
     /* Nav .main-navbar */
@@ -12,7 +17,7 @@
     }
         /* searchbar */
     .btnsearch {
-        float: right;
+        /*float: right;*/
     }
         /* Nav ul */
     ul.main-nav {

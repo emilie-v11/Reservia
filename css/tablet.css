@@ -1,5 +1,5 @@
 /* For tablet - Medium devices (large laptops and desktops) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     /*header*/
     .main-navbar{
         padding-top: 10px;
@@ -19,22 +19,30 @@
     /* Main */
 
     /* section search-city */
-    .presentation {
-       padding: 0;
-       padding-bottom: 20px;
-       margin-left: 30px;
-    }
-
-    .searchbar {
-        width: 80%;
+    .search-city {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
     }
-    .city {
-        width: 80%;
-        max-width: 480px;
+    .presentation {
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: 0px;
     }
-
+    .searchbar {
+        width: 420px;
+        padding-left: 20px;
+    }
+    .city {
+        max-width: 330px;
+    }
+    .btnsearch {
+        border-radius: 0px 15px 15px 0px;
+        position: absolute;
+    }
+    /* change shape of button */
     span.search {
         display: contents;
         color: #FFFFFF;
@@ -42,25 +50,21 @@
     .fa-search {
         display: none;
     }
-    .btnsearch {
-        border-radius: 0px 15px 15px 0px;
-    }
     
     /* section search filters */
     .search-filters {
-        margin-left: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
     }
     .filter-title {
         margin-left: 10px;
     }
-    .filters {
-        margin-left: 50px;
+    .button-filter {
+        margin-right: 20px;
+        margin-bottom: 15px;
     }
-    .filter {
-        margin-right: 50px;
-        margin-bottom: 30px;
-    }
-    
+
     /*section popular*/
     .bloc-popular-title {
         /*padding-left: 0;
@@ -79,7 +83,6 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     .popular-card-wrapping, .lodgings-card-wrapping, .activities-card-wrapping {
         width: 330px;
