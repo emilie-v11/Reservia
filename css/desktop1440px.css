@@ -5,6 +5,9 @@
         max-width: 1440px;
         margin: 0 auto;
     }
+    * {
+        font-size: 14.5px;
+    }
     /********************************************************* Main ******************************************************/
 
     /* Nav .main-navbar */
@@ -26,11 +29,6 @@
         margin-right: 0px;
     }
 
-    ul.main-nav a {
-        /* padding-left: 25px;
-        padding-right: 25px; */
-    }
-
     ul.main-nav a:focus {
         border-top: #0065fc solid 2px;
         padding-top: 22px;
@@ -48,7 +46,7 @@
     .presentation {
         /* padding: 0; */
         padding-bottom: 10px;
-        padding-left: 50px;
+        padding-left: 0px;
     }
 
     .presentation h1 {
@@ -61,7 +59,7 @@
 
     .searchbar {
         max-width: 420px;
-        padding-left: 50px;
+        padding-left: 0px;
     }
 
     .search {
@@ -80,13 +78,13 @@
     }
 
     section.search-city {  
-        padding-left: 50px; /* ! pourquoi le padding n'apparait pas ????*/
+        padding-left: 40px;
     }
 
             /*Section Filters*/
     /********************************************************* Main ******************************************************/
     .search-filters {
-        padding-left: 60px;
+        padding-left: 40px;
         display: flex;
         flex-wrap: wrap;
     }

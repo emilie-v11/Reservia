@@ -9,45 +9,51 @@
     * {
         font-size: 12px;
     }
-    /********************************************************* Main ******************************************************/
 
-    /* Nav .main-navbar */
+    /********************************************************* Header ******************************************************/
+    
+    header {
+        padding-top: 0;
+    }
+
     .main-navbar{
-        max-width: 100%;
-        /* display: flex; */
-        /*justify-content: space-between; */
-    }
-        /* searchbar */
-
-        /* Nav ul */
-    ul.main-nav {
         display: flex;
-        justify-content: flex-end;
-    }
-    ul.main-nav li {
-        color: black;
-        /* margin-left: 20px; */
-        margin-right: 0px;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    ul.main-nav a{
-        /* padding-left: 25px;
-        padding-right: 25px; */
+    .main-nav {
+        display: flex;
+        /* align-items: center;*/
+        justify-content: center; 
+        order: 2;
+        width: 400px;
     }
 
-    ul.main-nav a:focus {
-        border-top: #0065fc solid 2px;
-        padding-top: 22px;
+    .brand-logo {
+        order: 1;
+        padding-top: 30px;
     }
 
-    li.log-in{
+    .sign-up {
+        position: ;
         font-weight: bold;
         color: #0065fc;
+        position: static;
     }
 
-            /* section search-city*/
+    .link1,
+    .link2,
+    .link3 {
+    border-top: #F2F2F2 3px solid;
+    border-bottom: none;
+    padding-top: 30px;
+    width: 34%;
+    text-align: center;
+}
+            
     /********************************************************* Main ******************************************************/
-    
+    /* section search-city*/
     .presentation {
         padding: 0;
         padding-bottom: px;
@@ -82,14 +88,16 @@
 
             /*Section Filters*/
     /********************************************************* Main ******************************************************/
+
     .search-filters {
-        padding-left: 60px;
+        padding-left: 20px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .filter-title {
-        padding-right: 35px;
+        padding-right: 20px;
+        padding-left: 0px;
     }
 
     .filter,
