@@ -1,11 +1,8 @@
-/* For tablet - Medium devices (large laptops and desktops) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* For tablet - Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     /*header*/
     .main-navbar{
         padding-top: 10px;
-       /* max-width: 100%;
-        display: flex;
-        justify-content: space-between;*/
     }
     .brand-logo {
         margin-left: 20px;
@@ -23,8 +20,6 @@
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .presentation {
         padding: 0;
@@ -33,7 +28,6 @@
     }
     .searchbar {
         width: 420px;
-        padding-left: 20px;
     }
     .city {
         max-width: 330px;
@@ -67,8 +61,6 @@
 
     /*section popular*/
     .bloc-popular-title {
-        /*padding-left: 0;
-        padding-right: 0;*/
         justify-content: initial;
     }
     .bloc-popular-title h2 {

@@ -1,13 +1,9 @@
 /* For desktop - Extra large devices (large laptops and desktops) */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
     
     body {
-        max-width: 1200px;
+        max-width: 1440px;
         margin: 0 auto;
-    }
-
-    * {
-        font-size: 12px;
     }
     /********************************************************* Main ******************************************************/
 
@@ -30,7 +26,7 @@
         margin-right: 0px;
     }
 
-    ul.main-nav a{
+    ul.main-nav a {
         /* padding-left: 25px;
         padding-right: 25px; */
     }
@@ -48,9 +44,11 @@
             /* section search-city*/
     /********************************************************* Main ******************************************************/
     
+    
     .presentation {
-        padding: 0;
-        padding-bottom: px;
+        /* padding: 0; */
+        padding-bottom: 10px;
+        padding-left: 50px;
     }
 
     .presentation h1 {
@@ -63,6 +61,7 @@
 
     .searchbar {
         max-width: 420px;
+        padding-left: 50px;
     }
 
     .search {
@@ -78,6 +77,10 @@
 
     .btnsearch {
         border-radius: 0px 15px 15px 0px;
+    }
+
+    section.search-city {  
+        padding-left: 50px; /* ! pourquoi le padding n'apparait pas ????*/
     }
 
             /*Section Filters*/
@@ -125,8 +128,8 @@
     .double-container {
         display: flex;
         flex-direction: row-reverse;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
         margin-top: 20px;
     }
 
@@ -138,32 +141,17 @@
             /*Section Most popular*/
     /********************************************************* Main ******************************************************/
     .popular-gallery {
-        width: 30%;
+        width: 27%;
         margin-top: 0;
-        margin-left: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-bottom: 0px;
     }
 
     .popular-card-wrapping{
-        margin-bottom: 20px;
-        height: 100px;
-        width: 250px;
-        max-width: 100%;
-        margin: 15px;
-    }
-
-    .popular-card-title {
-        font-size: 12px;
-    }
-
-    .popular-card-information p {
-        font-size: 11px;
-        padding-bottom: 30px;
-    }
-    .popular-card-information {
-        padding-left: 12px;
+        margin-bottom: 30px;
+        margin-left: 10px;
     }
 
             /*Section Lodgings*/
@@ -173,58 +161,33 @@
         background-color: #F2F2F2;
         padding-top: 20px;
         padding-left: 30px;
-        /* padding-right: 20px; */
-        width: 69%;
+        padding-right: 20px;
+        width: 67%;
         margin-top: 0;
     }
 
     .container-lodgings {
         display: flex;
         flex-wrap: wrap;
-        
+
     }
     
     .lodgings-card-wrapping {
-        height: 130px;
-        width: 170px;
-        margin-left: 0px;
+        height: 182px;
+        width: 236px;
+        margin-left: 10px;
         margin-right: 20px;
         margin-bottom: 20px;
     }
     .lodgings-card-img {
         margin: 0;
-        /*width: 280px;*/
-        width: 100%;
-        height: 100px;
-    }
-    .lodgings-card-title {
-        font-size: 12px;
-        margin: 0%;
-        padding-bottom: 5px;
-    }
-    .lodgings-card-information p {
-        font-size: 11px;
-    }
-    .lodgings-card-information {
-        padding-left: 8px;
-        bottom: 26px;
     }
 
-    .fas.fa-star {
-        font-size: 9px;
-    }
-
-    p.more {
-        margin-top: 10px;
-    }
-    p.more p{
-        font-size: 10px;
-    }
             /*Section Activities*/
     /********************************************************* Main ******************************************************/
 
     .activities-gallery {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     h2#activities {
@@ -237,17 +200,16 @@
         flex-direction: column;
         align-content: flex-start;
         flex-wrap: wrap;
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 380px;
-        width: 85%;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 490px;
     }
     
     .activities-card-wrapping {
-        height: 100%;
-        max-width: 25%;
+        height: 450px;
+        max-width: 300px;
         width: 100%;
-        margin: 15px;
+        margin-right: 26px;
         
     }
     .activities-card-img {
@@ -256,28 +218,27 @@
 
     .activities-card1,
     .activities-img1 {
-        height: 350px;
-        width: 100%;
+        height: 440px;
     }
     .activities-card2,
     .activities-img2 {
-        height: 180px;
+        height: 230px;
     }
     .activities-card3,
     .activities-img3 {
-        height: 135px;
+        height: 175px;
     }
     .activities-card4,
     .activities-img4 {
-        height: 350px;
+        height: 440px;
     }
     .activities-card5,
     .activities-img5 {
-        height: 155px;
+        height: 200px;
     }
     .activities-card6,
     .activities-img6 {
-        height: 155px;
+        height: 200px;
     }
 
     .activities-card-title {
@@ -286,7 +247,6 @@
         padding-top: 25px;
         padding-bottom: 0;
         margin: 0;
-        font-size: 1.1rem;
     }
     
         /*footer*/
@@ -302,15 +262,8 @@
 
     }
     .nav-footer section {
-        padding-right: 90px;
-    }
-
-    footer h2 {
-        font-size: 1.1rem;
-    }
-
-    footer li {
-        font-size: 1rem;
+        padding-left: 50px;
+        padding-right: 200px;
     }
 
 }
