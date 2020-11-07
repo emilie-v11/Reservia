@@ -97,7 +97,7 @@ header {
     right: 10px;
     color: #0065FC;
     font-weight: 700;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .main-nav a:hover {
@@ -119,10 +119,14 @@ header {
     border-color: #0065FC;
 }
 
+/************************* main ******************************/
+
+            /****** Section Search by City ******/
+
 /* Div Presentation */
 
 .presentation {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     padding-right: 20px;
     padding-bottom: 20px;
 }
@@ -133,15 +137,13 @@ header {
 .presentation p {
     margin-top: 14px;
 }
-
-/************************* main ******************************/
-
-            /****** Section Search by City ******/
-
+/* Searchbar by City */
 .searchbar {
     position: relative;
     width: 100%;
     max-width: 400px;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-city {
@@ -149,7 +151,7 @@ header {
     padding-right: 20px;
     padding-bottom: 20px;
 }
-
+/* icon marker */
 .fa-map-marker-alt {
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
@@ -165,7 +167,7 @@ header {
     font-size: 18px;
     text-align: center;
 }                   
-
+/* input */
 .city {
     font-size: 1.25rem;
     border: 1px solid #F2F2F2;
@@ -180,7 +182,6 @@ header {
     /*width: 240px;
     position: absolute;*/
     
-    /*modifier par rapport 31/10*/
     max-width: 100%;
     text-align: center; /* essayer de supprimer ou de garder*/
     /*margin-left: 10px;*/
@@ -207,11 +208,10 @@ header {
     /*left: 300px;*/
     right: 0px;
 }
-
+/* icon search */
 .fa-search {
     color: #FFFFFF;
 }
-
 .fa-search:before {
     font-size: 18px;
 }
@@ -220,7 +220,8 @@ header {
     display: none;
 }
 
-         /****** Section Search Filters ******/    
+         /****** Section Search Filters ******/ 
+
 /*section search-filters*/
 .search-filters {
     padding-left: 20px;
@@ -244,6 +245,29 @@ h2.filter-title {
     margin-bottom: 12px;
     margin-right: 10px;
 }
+/* icon */
+.filters i.fas {
+    color: #0065FC;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    border: 3px solid #DBE9FE;
+    background: #DEEBFF;
+    padding: 13px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters i.fas::before {
+    font-size: 1.4rem;
+}
+
+i.fas.fa-child::before {
+    font-size: 1.5rem;
+}
+/* input */
 .filter {
     border-radius: 25px ;
     border: #D9D9D9 2px solid;
@@ -289,32 +313,12 @@ h2.filter-title {
     width: 220px;
 }
 
-.filters i.fas {
-    color: #0065FC;
-    height: 19px;
-    width: 19px;
-    border-radius: 50%;
-    border: 3px solid #DBE9FE;
-    background: #DEEBFF;
-    padding: 13px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.filters i.fas::before {
-    font-size: 1.4rem;
-}
-
-i.fas.fa-child::before {
-    font-size: 1.5rem;
-}
 
 /* icon info + p info */
 .info {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding-top: 8px;
 }
 
@@ -344,7 +348,7 @@ i.fas.fa-child::before {
     font-weight: 300;
 }
 
-            /****** Section Most Popular Lodging ******/
+            /****** Section Most Popular Lodgings ******/
 
 /* Section Popular */
 .popular-gallery {
@@ -356,8 +360,8 @@ i.fas.fa-child::before {
 .bloc-popular-title {
     display: flex;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 8px;
 }
@@ -575,13 +579,13 @@ h2#activities {
 
  footer {
     background: #F2F2F2;
-    width: 100%;
+    max-width: 100%;
     padding-bottom: 30px;
     padding-top: 25px;
+    padding-left: 20px;
 }
 
 footer section {
-    padding-left: 28px;
     padding-top: 6px;
     padding-bottom: 6px;
 }
@@ -613,14 +617,16 @@ footer a {
     /*header*/
     .search-city {
         padding-left: 0px;
+        padding-left: 20px;
     }
     .presentation h1 {
         font-size: 1.3rem;
     }
     /*Section Search by City, city-searchbar*/
     .searchbar {
-        padding-left: 10px;
+        /* padding-left: 10px; */
         padding-right: 10px;
+
     }
     .btnsearch {
         right: 10px;
@@ -639,13 +645,14 @@ footer a {
 }
 
 
-/* For Mobile Large 425px < 600px */
+/* For Mobile Large < 425px */
 
-@media only screen and (min-width: 425px) and (max-width: 767px) {    
+@media only screen and (min-width: 425px) {    
     /*section search by city*/
     .searchbar {
         max-width: 400px;
     }
+
     .city {
         max-width: 100%;
     }
@@ -655,6 +662,10 @@ footer a {
         margin-bottom: 20px;
     }
     /*Section Popular*/
+    .popular-card-wrapping {
+        max-width: 100%;
+    }
+
     .popular-card-information {
         padding-left: 15px;
         padding-right: 15px;

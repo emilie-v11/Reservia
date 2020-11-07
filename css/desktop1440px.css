@@ -3,7 +3,6 @@
     
     body {
         max-width: 1440px;
-        margin: 0 auto;
     }
     * {
         font-size: 14.5px;
@@ -13,21 +12,17 @@
     /* Nav .main-navbar */
     .main-navbar{
         max-width: 100%;
-        /* display: flex; */
-        /*justify-content: space-between; */
     }
-        /* searchbar */
 
         /* Nav ul */
-    ul.main-nav {
-        display: flex;
+    .main-nav {
+        /* display: flex; */
         justify-content: flex-end;
     }
-    ul.main-nav li {
+    /* .main-nav li {
         color: black;
-        /* margin-left: 20px; */
         margin-right: 0px;
-    }
+    } */
 
     ul.main-nav a:focus {
         border-top: #0065fc solid 2px;
@@ -140,16 +135,20 @@
     /********************************************************* Main ******************************************************/
     .popular-gallery {
         width: 27%;
-        margin-top: 0;
-        margin-left: 40px;
-        padding-left: 30px;
         padding-right: 30px;
-        padding-bottom: 0px;
     }
 
     .popular-card-wrapping{
         margin-bottom: 30px;
         margin-left: 10px;
+    }
+
+    .popular-card-title {
+        font-size: 15px;
+    }
+
+    .popular-card-information p {
+        font-size: 14px;
     }
 
             /*Section Lodgings*/
@@ -171,7 +170,7 @@
     }
     
     .lodgings-card-wrapping {
-        height: 182px;
+        height: 100%;
         width: 236px;
         margin-left: 10px;
         margin-right: 20px;
@@ -179,6 +178,27 @@
     }
     .lodgings-card-img {
         margin: 0;
+    }
+
+    .lodgings-card-information {
+        padding-bottom: 0;
+        bottom: 0;
+    }
+
+    .lodgings-card-information h3{
+        font-size: 15px;
+    }
+
+    .lodgings-card-information p{
+        font-size: 14px;
+    }
+
+    .fas.fa-star {
+        font-size: 11px;
+    }
+
+    p.more {
+        padding-bottom: 40px;
     }
 
             /*Section Activities*/

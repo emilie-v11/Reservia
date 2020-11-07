@@ -1,24 +1,20 @@
 /* For tablet - Medium devices */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
     /*header*/
     .main-navbar{
         padding-top: 10px;
     }
-    .brand-logo {
-        margin-left: 20px;
-    }
+
     .sign-up {
         position: absolute;
-        right: 20px;
         top: 50px;
-        padding-right: 10px;
     }
     /* Main */
 
     /* section search-city */
     .search-city {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 20px;
     }
     .presentation {
@@ -47,8 +43,8 @@
     
     /* section search filters */
     .search-filters {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 20px;
     }
     .filter-title {
@@ -63,11 +59,8 @@
     .bloc-popular-title {
         justify-content: initial;
     }
-    .bloc-popular-title h2 {
-        margin-left: 25px;
-    }
+
     .bloc-popular-title p {
-        margin-right: 25px;
         margin-left: auto;
     }
     /*sections containers*/
@@ -75,15 +68,19 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .popular-card-wrapping, .lodgings-card-wrapping, .activities-card-wrapping {
         width: 330px;
         margin: 20px;
     }
     /*footer*/
+    footer {
+        padding: 20px;
+    }
     .nav-footer {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     footer section {
         padding-left: 0px;
