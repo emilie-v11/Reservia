@@ -1,0 +1,88 @@
+/* For tablet - Medium devices */
+@media only screen and (min-width: 768px) {
+    /*header*/
+    .main-navbar{
+        padding-top: 10px;
+    }
+
+    .sign-up {
+        position: absolute;
+        top: 50px;
+    }
+    /* Main */
+
+    /* section search-city */
+    .search-city {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .presentation {
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+    .searchbar {
+        width: 420px;
+    }
+    .city {
+        max-width: 330px;
+    }
+    .btnsearch {
+        border-radius: 0px 15px 15px 0px;
+        position: absolute;
+    }
+    /* change shape of button */
+    span.search {
+        display: contents;
+        color: #FFFFFF;
+    }
+    .fa-search {
+        display: none;
+    }
+    
+    /* section search filters */
+    .search-filters {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .filter-title {
+        margin-left: 10px;
+    }
+    .button-filter {
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    /*section popular*/
+    .bloc-popular-title {
+        justify-content: initial;
+    }
+
+    .bloc-popular-title p {
+        margin-left: auto;
+    }
+    /*sections containers*/
+    .container-popular, .container-lodgings, .container-activities {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .popular-card-wrapping, .lodgings-card-wrapping, .activities-card-wrapping {
+        width: 330px;
+        margin: 20px;
+    }
+    /*footer*/
+    footer {
+        padding: 20px;
+    }
+    .nav-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer section {
+        padding-left: 0px;
+    }
+}
