@@ -449,6 +449,7 @@
 
 /* For desktop - Extra large devices (large laptops and desktops) */
 /* @media only screen and (min-width: 1440px) {
+
   .lodgings-card-wrapping {
     height: 100%;
     width: 180px;
@@ -498,4 +499,5 @@
     height: 185px;
   }
 } */
+
 
