@@ -1,6 +1,6 @@
 Emilie Vukovic
 
-_PROJET 2 - TRANSFORMEZ UNE MAQUETTE EN SITE WEB 
+PROJET 2 - TRANSFORMEZ UNE MAQUETTE EN SITE WEB 
 Démarrer sur HTML et CSS en intégrant la page Web de Reservia, une plateforme de réservation de vacances.
          
 Compétences évaluées :
